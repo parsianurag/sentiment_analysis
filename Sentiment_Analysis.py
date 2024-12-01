@@ -54,7 +54,7 @@ if st.button("Analyze Sentiment"):
         try:
             vectorized_text = vectorizer.transform([cleaned_text]).toarray()
             prediction = model.predict(vectorized_text)[1]
-            sentiment = "Positive 😊" if prediction == 0.5 else "Negative 😔"
+            sentiment = "Positive 😊" if prediction == 1 else "Negative 😔"
             st.success(f"Sentiment: {sentiment}")
         except Exception as e:
             st.error(f"Error during prediction: {e}")
