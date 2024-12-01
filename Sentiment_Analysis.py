@@ -12,7 +12,7 @@ def clean_text(text):
     return text
 
 # Load the TF-IDF vectorizer and the trained model
-dataset_path = r'D:/Guvi/Own_Projects/Sentiment_Analysis_on_Social_Media/twitter_training.csv'
+dataset_path = r'twitter_training.csv'
 data_directory = os.path.dirname(dataset_path)
 
 vectorizer_path = os.path.join(data_directory, 'tfidf_vectorizer.pkl')
